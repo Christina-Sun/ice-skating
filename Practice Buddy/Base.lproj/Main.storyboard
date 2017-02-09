@@ -52,7 +52,7 @@
         <!--New Practice-->
         <scene sceneID="i6a-yH-Pft">
             <objects>
-                <viewController title="New Practice" id="xnL-JI-aV4" sceneMemberID="viewController">
+                <viewController title="New Practice" id="xnL-JI-aV4" customClass="ViewController" customModule="Practice_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yHv-kV-bYr"/>
                         <viewControllerLayoutGuide type="bottom" id="2Fz-wN-xLh"/>
@@ -172,6 +172,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="start" destination="YXu-YS-CZE" id="9WQ-pm-uL3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUY-rl-dwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
