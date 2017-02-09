@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
-    @IBOutlet weak var startNewPractice: UIButton!
+    @IBAction func startNewPractice(_ sender: AnyObject) {
+    }
+    
+    @IBAction func start(_ sender: AnyObject) {
+    }
     
     
     override func viewDidLoad() {

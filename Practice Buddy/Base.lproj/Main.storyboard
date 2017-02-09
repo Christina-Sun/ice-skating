@@ -33,6 +33,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start New Practice"/>
                                 <connections>
+                                    <action selector="startNewPractice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8D-XH-9rN"/>
                                     <segue destination="xnL-JI-aV4" kind="show" id="X88-Ar-Iw7"/>
                                 </connections>
                             </button>
@@ -41,7 +42,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="dsf-bh-E1J"/>
                     <connections>
-                        <outlet property="startNewPractice" destination="qsH-Z2-fpU" id="Oeu-26-yL9"/>
                         <outlet property="welcomeLabel" destination="SiQ-Sb-S7w" id="Opw-CJ-rtR"/>
                     </connections>
                 </viewController>
@@ -70,6 +70,7 @@
                                     <color key="titleColor" red="0.16049753032631386" green="0.5" blue="0.2368920084752017" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="start:" destination="xnL-JI-aV4" eventType="touchUpInside" id="Bvd-PC-Gts"/>
                                     <segue destination="xqh-Pq-6uU" kind="show" id="hYZ-0T-1FK"/>
                                 </connections>
                             </button>
@@ -172,9 +173,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="start" destination="YXu-YS-CZE" id="9WQ-pm-uL3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUY-rl-dwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
