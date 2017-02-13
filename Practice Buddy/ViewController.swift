@@ -20,12 +20,7 @@ class ViewController: UIViewController {
     //New practice screen elements:
     @IBAction func start(_ sender: AnyObject) {
     }
-    
-//Illegal configuration error?
-//    @IBOutlet weak var move1: UITextField!
-//    
-//    @IBOutlet weak var slider1: UISlider!
-    
+        
     
     //Original swift stuff - untouched
     override func viewDidLoad() {
