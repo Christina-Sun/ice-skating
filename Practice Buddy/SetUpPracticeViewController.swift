@@ -9,9 +9,24 @@
 import UIKit
 
 class SetUpPracticeViewController: UIViewController {
-
+    
+    //
+    @IBOutlet weak var oneHourPractice: UILabel!
+    
+    @IBOutlet weak var moveName: UITextField!
+    
+    @IBOutlet weak var timeSlider: UISlider!
+    //
+    
+    
+    //This should add data (move name and time) to the practiceMoves array - Creat Practice object
+    //Grab the data from the slider, store it as a time interval object so that I can work with it
+    @IBAction func addPracticeMove(_ sender: AnyObject) {
+    }
+    
+    
     //Create and append practice objects (Practice objects have two things: Move and Time)???
-    var practiceMoves = []
+    var practice = [PracticeMove]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +53,7 @@ class SetUpPracticeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startPracticeSegue" {
             let nextVC = segue.destination as! PracticeTimerViewController
-            nextVC.passedData = 
+            nextVC.passedData = practice
         }
     }
 

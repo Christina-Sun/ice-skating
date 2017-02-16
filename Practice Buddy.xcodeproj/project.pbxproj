@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B04BBD81E562CDC006B10B9 /* SetUpPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04BBD71E562CDC006B10B9 /* SetUpPracticeViewController.swift */; };
 		2B04BBDA1E562D53006B10B9 /* PracticeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04BBD91E562D53006B10B9 /* PracticeTimerViewController.swift */; };
+		2B04BBDC1E56342F006B10B9 /* PracticeMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04BBDB1E56342F006B10B9 /* PracticeMove.swift */; };
 		2B0979941E43BFF500B8C424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0979931E43BFF500B8C424 /* AppDelegate.swift */; };
 		2B0979961E43BFF500B8C424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0979951E43BFF500B8C424 /* ViewController.swift */; };
 		2B0979991E43BFF500B8C424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0979971E43BFF500B8C424 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		2B04BBD71E562CDC006B10B9 /* SetUpPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpPracticeViewController.swift; sourceTree = "<group>"; };
 		2B04BBD91E562D53006B10B9 /* PracticeTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeTimerViewController.swift; sourceTree = "<group>"; };
+		2B04BBDB1E56342F006B10B9 /* PracticeMove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeMove.swift; sourceTree = "<group>"; };
 		2B0979901E43BFF500B8C424 /* Practice Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practice Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0979931E43BFF500B8C424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B0979951E43BFF500B8C424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				2B0979931E43BFF500B8C424 /* AppDelegate.swift */,
 				2B0979951E43BFF500B8C424 /* ViewController.swift */,
 				2B0979971E43BFF500B8C424 /* Main.storyboard */,
+				2B04BBDB1E56342F006B10B9 /* PracticeMove.swift */,
 				2B04BBD91E562D53006B10B9 /* PracticeTimerViewController.swift */,
 				2B04BBD71E562CDC006B10B9 /* SetUpPracticeViewController.swift */,
 				2B09799D1E43BFF500B8C424 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				2B04BBD81E562CDC006B10B9 /* SetUpPracticeViewController.swift in Sources */,
 				2B09799C1E43BFF500B8C424 /* Practice_Buddy.xcdatamodeld in Sources */,
 				2B0979941E43BFF500B8C424 /* AppDelegate.swift in Sources */,
+				2B04BBDC1E56342F006B10B9 /* PracticeMove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

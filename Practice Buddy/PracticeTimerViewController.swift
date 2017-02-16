@@ -11,7 +11,7 @@ import UIKit
 class PracticeTimerViewController: UIViewController {
 
     
-    var passedData = [String]()
+    var passedData = [PracticeMove]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
