@@ -24,7 +24,7 @@ class SetUpPracticeViewController: UIViewController {
     @IBAction func addPracticeMove(_ sender: AnyObject) {
         //From youtube passing data between vc tutorial
         //let userInput = moveName.text
-        
+        //At the end, display in a table view cell?
     }
     
     
