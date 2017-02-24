@@ -22,6 +22,9 @@ class SetUpPracticeViewController: UIViewController {
     //This should add data (move name and time) to the practiceMoves array - Creat Practice object
     //Grab the data from the slider, store it as a time interval object so that I can work with it
     @IBAction func addPracticeMove(_ sender: AnyObject) {
+        //From youtube passing data between vc tutorial
+        //let userInput = moveName.text
+        
     }
     
     
