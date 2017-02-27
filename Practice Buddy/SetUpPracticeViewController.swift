@@ -22,13 +22,14 @@ class SetUpPracticeViewController: UIViewController {
     //This should add data (move name and time) to the practiceMoves array - Creat Practice object
     //Grab the data from the slider, store it as a time interval object so that I can work with it
     @IBAction func addPracticeMove(_ sender: AnyObject) {
-        //Move and time should be displayed on Table View
+        //Turn move and time into PracticeMove (Object) and store in practice (array)
         
         //change range of slider to be 60-move1time
         
         //From youtube passing data between vc tutorial
         //let userInput = moveName.text
-        //At the end, display in a table view cell?
+        
+        //At the end, display move and time in Table View
     }
     
     @IBOutlet weak var practiceMoveDisplay: UITableView!
