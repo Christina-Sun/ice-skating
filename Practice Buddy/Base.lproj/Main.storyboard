@@ -124,6 +124,7 @@
                     <connections>
                         <outlet property="moveName" destination="olw-E6-RiL" id="lNU-1Y-wyi"/>
                         <outlet property="oneHourPractice" destination="yhM-f0-Z4J" id="rYX-05-C0f"/>
+                        <outlet property="practiceMoveDisplay" destination="f28-3K-ffu" id="z9t-JD-1Cb"/>
                         <outlet property="timeSlider" destination="onw-kG-s67" id="8tg-03-3bz"/>
                     </connections>
                 </viewController>
