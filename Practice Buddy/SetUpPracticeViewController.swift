@@ -9,33 +9,32 @@
 import UIKit
 
 class SetUpPracticeViewController: UIViewController {
-    
-    //
+    var newMove = PracticeMove()
+   
     @IBOutlet weak var oneHourPractice: UILabel!
     
     @IBOutlet weak var moveName: UITextField!
     
     @IBOutlet weak var timeSlider: UISlider!
-    //
     
+    //Create empty array
+   // var practice = [PracticeMove]()
     
     //This should add data (move name and time) to the practiceMoves array - Creat Practice object
     //Grab the data from the slider, store it as a time interval object so that I can work with it
-    @IBAction func addPracticeMove(_ sender: AnyObject) {
-        //Turn move and time into PracticeMove (Object) and store in practice (array)
+    @IBAction func addPracticeMove(_ sender: UIButton) {
         
-        //change range of slider to be 60-move1time
+        //Adding one PracticeMove
+        newMove.moveName = moveName.text
+        newMove.moveTime = Double(timeSlider.value)
         
-        //From youtube passing data between vc tutorial
-        //let userInput = moveName.text
-        
-        //At the end, display move and time in Table View
+        //Change range of slider to be 60-time
+        timeSlider.maximumValue = 60-timeSlider.value
+
     }
     
     @IBOutlet weak var practiceMoveDisplay: UITableView!
     
-    //Create and append practice objects (Practice objects have two things: Move and Time)
-    var practice = [PracticeMove]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +61,7 @@ class SetUpPracticeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startPracticeSegue" {
             let nextVC = segue.destination as! PracticeTimerViewController
-            nextVC.passedData = practice
+            nextVC.passedData = [newMove]
         }
     }
 
