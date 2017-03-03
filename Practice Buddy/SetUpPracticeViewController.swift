@@ -9,19 +9,26 @@
 import UIKit
 
 class SetUpPracticeViewController: UIViewController {
+    
     var newMove = PracticeMove()
-   
-    @IBOutlet weak var oneHourPractice: UILabel!
+
     
     @IBOutlet weak var moveName: UITextField!
     
+    @IBOutlet weak var timeDisplay: UILabel!
+    
     @IBOutlet weak var timeSlider: UISlider!
+    let step: Float = 1
     
-    //Create empty array
-   // var practice = [PracticeMove]()
+    @IBAction func timeSliderChange(_ sender: AnyObject) {
+        let roundedValue = round(timeSlider.value / step) * step
+        timeSlider.value = roundedValue
+        timeDisplay.text = "\(Int(roundedValue))"
+        
+//        timeDisplay.text = "\(timeSlider.value)"
+    }
     
-    //This should add data (move name and time) to the practiceMoves array - Creat Practice object
-    //Grab the data from the slider, store it as a time interval object so that I can work with it
+
     @IBAction func addPracticeMove(_ sender: UIButton) {
         
         //Adding one PracticeMove
