@@ -17,6 +17,9 @@ class SetUpPracticeViewController: UIViewController {
     
     @IBOutlet weak var timeDisplay: UILabel!
     
+    @IBOutlet weak var timeMinValue: UILabel!
+    @IBOutlet weak var timeMaxValue: UILabel!
+    
     @IBOutlet weak var timeSlider: UISlider!
     let step: Float = 1
     
@@ -36,7 +39,8 @@ class SetUpPracticeViewController: UIViewController {
         newMove.moveTime = Double(timeSlider.value)
         
         //Change range of slider to be 60-time
-        timeSlider.maximumValue = 60-timeSlider.value
+        timeSlider.maximumValue = round(60-timeSlider.value)
+        timeMaxValue.text = "\(timeSlider.maximumValue)"
 
     }
     
